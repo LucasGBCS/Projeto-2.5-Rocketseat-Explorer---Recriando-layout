@@ -2,6 +2,9 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
+
+
 }
 
 :root{
@@ -22,14 +25,14 @@ body{
 }
 
 .page {
-    width: 1280px;
+    width: 1092px;
     margin: 0 auto;
     padding-top: 71px;
     
 }
 
 header{
-    width: 1081px;
+    
     display: flex;
     justify-content: space-between;
     align-content: center;
@@ -66,7 +69,7 @@ main{
     display: flex;
     justify-content: space-between;
     gap: 82px;
-    width: 1092px
+    
     
 }
 
