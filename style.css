@@ -1,29 +1,129 @@
-/* 
-font-family: "Mulish", sans-serif;
-font-family: "Open Sans", sans-serif;
-font-family: "JetBrains Mono", monospace;
- */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --mulish: "Mulish", sans-serif;
+    --OpenSans: "Open Sans", sans-serif;
+    --JetBrains: "JetBrains Mono", monospace;
+    --color-1: #00BFA6;
+    --color-2: #C2C2C2;
+    --color-3: #FFFFFF;
+    --color-4: #2F2E41;
+
+}
 
 body{
-    background: #2C2B3D ;
+    background: var(--color-4) ;
     margin: 0;
 
 }
 
 .page {
-    width: 1000px;
+    width: 1280px;
     margin: 0 auto;
     padding-top: 71px;
-
+    
 }
+
+header{
+    width: 1081px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 101px;
+    font-size: 14px;
+   }
 
 nav{
     display: flex;
-    padding-left: 2px;
-    
-    justify-content: center;
-    align-content: center;
-    gap: 607px;
+    justify-content: space-between;
+       
+}
 
+
+ul{
+    display: flex;
+    list-style-type: none;
+    gap: 64px;
     
+    
+}
+
+nav a{
+    text-decoration: none;
+    font-family: var(--mulish);
+    color: #FFFFFF;
+}
+nav a:hover{
+    font-weight: bolder ;
+}
+
+
+main{
+    display: flex;
+    justify-content: space-between;
+    gap: 82px;
+    width: 1092px
+    
+}
+
+h1{
+    font-size: 36px;
+    color: var(--color-3);
+    text-align: center;
+    margin-bottom: 59px;
+    font-weight: 700;
+    font-family: var(--JetBrains);
+    
+}
+
+span{
+    color: var(--color-1);
+}
+p {
+    color: #C2C2C2;
+    text-align: center;
+    font-family: "Open Sans";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+#line{
+    width: 568px;
+    height: 1px;
+    background: #00BFA6;
+    margin: 0 auto;
+    margin-bottom: 27px;
+    margin-top: 130px;
+    
+        
+}
+footer{
+    text-align: center;
+    font-family: "JetBrains Mono";
+    font-size: 14px;
+    color: var(--color-3);
+    font-weight: 500;
+    line-height: 28px;
+    
+}
+
+footer a{
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+footer a:hover{
+    font-size: 16px;
+}
+
+#cadeado{
+    position: fixed;
+    bottom: 0;
+    left: 0;
 }
